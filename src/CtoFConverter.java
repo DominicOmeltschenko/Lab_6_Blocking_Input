@@ -10,18 +10,19 @@ public class CtoFConverter {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         double currentTemp = 0.00;
-        double celsiusTemp = 0.00;
-        double CONSTANT = (double) 5 /9;
+        double fahrenheitTemp = 0.00;
+        double CONSTANT = 1.8;
         String trash = "";
 
         boolean done = false;
         do
         {
-            System.out.print("Please enter the Temperature: ");
+            System.out.print("Please enter the Temperature (in Celsius): ");
             if(in.hasNextDouble())
             {
                 currentTemp = in.nextDouble();
-                celsiusTemp = CONSTANT * (currentTemp - 32);
+                fahrenheitTemp = (currentTemp * CONSTANT) + 32;
+                System.out.print("Your temperature in Fahrenheit is: " + fahrenheitTemp);
                 in.nextLine();
                 done = true;
             }
@@ -29,8 +30,8 @@ public class CtoFConverter {
             {
 
                 trash = in.nextLine();
-                System.out.println();
-                System.out.println();
+                System.out.println("You said you temperature was: " + trash);
+                System.out.println("Please Input a valid amount");
             }
         }while(!done);
     }
