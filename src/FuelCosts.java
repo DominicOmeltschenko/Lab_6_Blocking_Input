@@ -26,7 +26,7 @@ public class FuelCosts
                 {
 
                     trash = in.nextLine();
-                    System.out.println("You said you temperature was: " + trash);
+                    System.out.println("You said your number of gallons was: " + trash);
                     System.out.println("Please Input a valid amount");
                     done = false;
                 }
@@ -45,7 +45,7 @@ public class FuelCosts
                 {
 
                     trash = in.nextLine();
-                    System.out.println("You said you temperature was: " + trash);
+                    System.out.println("You said your fuel efficiency was: " + trash);
                     System.out.println("Please Input a valid amount");
                     done = false;
                 }
@@ -64,7 +64,7 @@ public class FuelCosts
                 {
 
                     trash = in.nextLine();
-                    System.out.println("You said you temperature was: " + trash);
+                    System.out.println("You said the price of a gallon of gas was: " + trash);
                     System.out.println("Please Input a valid amount");
                     done = false;
                 }
