@@ -30,7 +30,7 @@ public class CtoFConverter {
             {
 
                 trash = in.nextLine();
-                System.out.println("You said you temperature was: " + trash);
+                System.out.println("You said your temperature was: " + trash);
                 System.out.println("Please Input a valid amount");
             }
         }while(!done);
