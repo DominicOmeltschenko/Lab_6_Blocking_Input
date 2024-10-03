@@ -18,6 +18,7 @@ public class RectangleInfo {
             double widthNumber = 0.00;
             double areaNumber = 0.00;
             double perimeterNumber = 0.00;
+            double pythagoreanNumber = 0.00;
             String trash = "";
 
             boolean done = false;
@@ -60,8 +61,12 @@ public class RectangleInfo {
             }while(!done);
             areaNumber = lengthNumber * widthNumber;
             perimeterNumber = lengthNumber * 2 + widthNumber * 2;
+            pythagoreanNumber = Math.pow(lengthNumber , 2) + Math.pow(widthNumber , 2);
+            pythagoreanNumber = Math.sqrt(pythagoreanNumber);
             System.out.println("The area of your rectangle is: " + areaNumber);
             System.out.println("The perimeter of your rectangle is: " + perimeterNumber);
+            System.out.println("The length of the diagonal of your rectangle is: " + pythagoreanNumber);
+
 
         }
 
